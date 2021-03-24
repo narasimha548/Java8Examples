@@ -1,0 +1,78 @@
+
+--->Login with git hub using fllowing commands.
+
+>git config --global user.name "narasimha548"
+>git config --global user.email "narasimhaprasad548@gmail.com"
+
+
+---> Initalize git repository 
+> git init
+
+--> Addin files to local 
+>git add . (. specifies all files )
+>git add <file name>
+
+
+--> After adding files to local git ,commit to local repository
+
+>git commit -m 'message'
+
+-->After commit to localrepo, add remote repo
+> git remote add origin https://github.com/narasimha548/Java8Examples.git
+
+--> push the files to remote repository by using following command
+> git push -u origin master
+
+
+
+
+
+
+---> Create branch using fllowing command
+> git checkout -b <branch name>
+
+---> Switch between branch's 
+> git checkout <branch name>
+
+--> push local branch to remote repository
+>git push -u origin <branch>
+
+
+
+
+
+
+---> merge two remote branchs, 
+=======================================
+Example Brnahc's
+
+    1) Production (Matser)
+	2) UAT branch
+	3) Testing branch
+	4) Development branch
+
+-->For example, i want to merge 2 remote branch's  UAT branch to Production(master ).
+
+    a) First checkout to Production(branch), command below
+       >git checkout production 
+    b) By using Merge we can merge the 2 branchs,
+       >git merge UAT branch
+    c) After merge , push current barnch i.e production using following cmd
+      > git push origin production	
+
+
+
+
+
+
+
+---> How to reset the commits in git -- local branch
+
+--> $ git log
+
+commit 2d335a3b939d91f739f1266786bd41c05668bdb5 (HEAD -> master)
+Author: prasad <tnprasad@cashlinkglobal.com>
+Date:   Wed Mar 24 11:38:42 2021 +0530
+
+    java 8 first commit examples
+	
