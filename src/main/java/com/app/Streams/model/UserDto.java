@@ -1,8 +1,14 @@
 package com.app.Streams.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="USER_TABLE")
 public class UserDto {
 	
+	@Id
 	private Integer userId;
 	private String userName;
 	private String userAge;

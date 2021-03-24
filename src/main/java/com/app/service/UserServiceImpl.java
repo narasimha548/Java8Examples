@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.app.Streams.model.UserDto;
 
-@Lazy
+/*@Lazy*/
 @Service
 public class UserServiceImpl implements UserService {
 

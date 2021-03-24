@@ -56,19 +56,52 @@ public class UserEntity {
 				+ ", userAddress=" + userAddress + "]";
 	}
 
+	
+	
+	
 	@Override
-	public boolean equals(Object obj){
-
-		if(obj==null)
-			return false;
-
-		if( ! (obj instanceof  UserEntity))
-			return false;
-
-		if(obj==this)
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + gender;
+		result = prime * result + ((userAddress == null) ? 0 : userAddress.hashCode());
+		result = prime * result + ((userAge == null) ? 0 : userAge.hashCode());
+		result = prime * result + ((userId == null) ? 0 : userId.hashCode());
+		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
 			return true;
-
-		return this.getUserId()==((UserEntity)obj).getUserId();
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		UserEntity other = (UserEntity) obj;
+		if (gender != other.gender)
+			return false;
+		if (userAddress == null) {
+			if (other.userAddress != null)
+				return false;
+		} else if (!userAddress.equals(other.userAddress))
+			return false;
+		if (userAge == null) {
+			if (other.userAge != null)
+				return false;
+		} else if (!userAge.equals(other.userAge))
+			return false;
+		if (userId == null) {
+			if (other.userId != null)
+				return false;
+		} else if (!userId.equals(other.userId))
+			return false;
+		if (userName == null) {
+			if (other.userName != null)
+				return false;
+		} else if (!userName.equals(other.userName))
+			return false;
+		return true;
 	}
 
 

@@ -34,6 +34,8 @@ public class SingletonExample {
 		System.out.println(" getSingletonInstance()    called ");
 		return SINGLETON_INSTANCE;
 	}
+	
+	
 }
 
 

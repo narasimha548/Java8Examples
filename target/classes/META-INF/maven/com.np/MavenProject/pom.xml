@@ -16,6 +16,12 @@
 			<version>4.1</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.18.0-GA</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.maven</groupId>
@@ -88,8 +94,8 @@
 
 		<dependency>
 			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc7-12.1.0</artifactId>
-			<version>12.1.0</version>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.0</version>
 		</dependency>
 
 	</dependencies>
